@@ -1,10 +1,10 @@
-# Module 1 Lab Guide: GitHub, Local Jupyter, and Optional Codespaces Setup
+# Module 1 Lab Guide: GitHub Codespaces, Repository Setup, and Optional Local Setup
 
 **BAN 6003: Data Management and Analytics Integration**
 
-This first lab is a setup and confidence check. The goal is to make sure you can access the course repository, create your own GitHub copy, run a Jupyter notebook, save your work, and submit your work through Canvas.
+This first lab is a setup and confidence check. The goal is to make sure you can access the course repository, create your own GitHub copy, run a Jupyter notebook in GitHub Codespaces, save your work, push your changes, and submit your repository link through Canvas.
 
-Most students should use GitHub Codespaces if they are new to Python setup. More experienced students may use a local computer with conda, VS Code, and Jupyter.
+GitHub Codespaces is the main path for this course and is recommended for Python beginners. More technically experienced students may choose to run the same repository on a local computer with conda, VS Code, and Jupyter.
 
 ## Lab File
 
@@ -26,8 +26,9 @@ You need:
 
 - a personal GitHub account
 - access to Canvas
-- either GitHub Codespaces or a local Python/Jupyter setup
-- a way to submit your final repository link or files through Canvas
+- GitHub Codespaces as the main coding environment
+- optional local Python/Jupyter setup if you are comfortable managing your own environment
+- a way to submit your final GitHub repository link through Canvas
 
 For GitHub beginners, I recommend creating a **public** GitHub repository from the template. A public repo is easiest for the instructor to inspect. If you use a private repository, you must add the instructor as a collaborator. The instructor's GitHub account is `zzz1990771`, and the associated email is `zzz1990771@gmail.com`.
 
@@ -133,16 +134,11 @@ git commit -m "Complete Module 1 setup check"
 git push
 ```
 
-If you are working from a downloaded ZIP instead of GitHub, save your completed notebook and submit the required file or ZIP through Canvas.
-
 ## Step 5: Submit Through Canvas
 
-Submit one of the following through Canvas:
+Submit your GitHub repository link through Canvas. This is the only submission method for this lab package.
 
-1. Your GitHub repository link, if the instructor can access it.
-2. A ZIP file containing your completed notebook and required files.
-
-If your repository is private, invite `zzz1990771` as a collaborator before submitting the link.
+Your repository should be public so the instructor can inspect it. If your repository is private, invite `zzz1990771` as a collaborator before submitting the link.
 
 ## Minimum Completion Checklist
 
@@ -154,4 +150,4 @@ Before submitting, make sure:
 - You ran the Python and Pandas checks.
 - You completed the short written response.
 - You saved your work.
-- You submitted your GitHub link or completed files through Canvas.
+- You submitted your GitHub repository link through Canvas.

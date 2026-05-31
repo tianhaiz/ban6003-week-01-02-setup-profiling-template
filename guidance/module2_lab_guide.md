@@ -26,7 +26,7 @@ This module is part of the Module 1-2 package. Use the same repository you creat
 
 https://github.com/tianhaiz/ban6003-week-01-02-setup-profiling-template
 
-Continue working in your own repository, not the instructor template. You may use Codespaces or your local conda/Jupyter environment. Make sure your repository is public, or invite `zzz1990771` / `zzz1990771@gmail.com` if it is private. Submit your GitHub repository link or completed files through Canvas.
+Continue working in your own repository, not the instructor template. Use Codespaces as the main path, or use your local conda/Jupyter environment if you are comfortable managing it. Make sure your repository is public, or invite `zzz1990771` / `zzz1990771@gmail.com` if it is private. Submit your GitHub repository link through Canvas.
 
 ## What You Will Practice
 
@@ -34,7 +34,7 @@ You will practice basic Python objects, code and markdown cells, importing Panda
 
 ## Recommended Workflow
 
-1. Open your repository in Codespaces or local Jupyter.
+1. Open your repository in Codespaces, or in local Jupyter if you are using the optional local path.
 2. Open `notebooks/Week2_lab1_python_pandas_guided_lab.ipynb`.
 3. Run the guided lab from top to bottom.
 4. Read the markdown explanations, not just the code.
