@@ -1,10 +1,10 @@
-# Module 1 Lab Guide: GitHub, GitHub Classroom, and Codespaces Setup
+# Module 1 Lab Guide: GitHub, Local Jupyter, and Optional Codespaces Setup
 
 **BAN 6003: Data Management and Analytics Integration**
 
-This first lab is a setup and confidence check. The goal is to make sure you can create or use a GitHub account, accept a GitHub Classroom assignment, open your assignment repository in GitHub Codespaces, run a Jupyter notebook, save your work, and push your changes back to GitHub.
+This first lab is a setup and confidence check. The goal is to make sure you can access the course repository, create your own GitHub copy, run a Jupyter notebook, save your work, and submit your work through Canvas.
 
-Take your time with this lab. Most later labs will use the same workflow.
+Most students should use GitHub Codespaces if they are new to Python setup. More experienced students may use a local computer with conda, VS Code, and Jupyter.
 
 ## Lab File
 
@@ -12,24 +12,24 @@ Complete:
 
 `Week1_introduction_to_codespaces.ipynb`
 
-## GitHub Classroom Assignment Link
+## Course Repository Link
 
-Canvas will provide the GitHub Classroom invitation link for the Module 1-2 assignment package:
+Start from this public template repository:
 
-**GitHub Classroom invitation link:** [to be added]
+https://github.com/tianhaiz/ban6003-week-01-02-setup-profiling-template
 
-Use this link to create your own personal assignment repository. Do not work in the instructor's template repository.
+Do not edit the instructor's repository directly. Create your own copy first.
 
 ## What You Need Before Starting
 
 You need:
 
 - a personal GitHub account
-- access to the GitHub Classroom assignment link posted by your instructor, usually in Canvas
-- a web browser
-- enough time for GitHub Codespaces to start the first time
+- access to Canvas
+- either GitHub Codespaces or a local Python/Jupyter setup
+- a way to submit your final repository link or files through Canvas
 
-You do not need to install Python, Jupyter, or VS Code on your own computer for this lab. GitHub Codespaces provides the coding environment in the browser.
+For GitHub beginners, I recommend creating a **public** GitHub repository from the template. A public repo is easiest for the instructor to inspect. If you use a private repository, you must add the instructor as a collaborator. The instructor's GitHub account is `zzz1990771`, and the associated email is `zzz1990771@gmail.com`.
 
 ## Step 1: Create or Sign In to GitHub
 
@@ -37,103 +37,121 @@ Go to:
 
 `https://github.com`
 
-If you already have a GitHub account, sign in. If you do not have an account, create one.
+If you already have a GitHub account, sign in. If you do not have an account, create one. Use an email address you can access throughout the semester. If possible, add your UTSA email to your GitHub account because it may help you verify student benefits.
 
-Use an email address you can access during the semester. Choose a username that you are comfortable using for coursework. After creating the account, verify your email address if GitHub asks you to do so.
+## Step 2: Create Your Own Repository from the Template
 
-## Step 2: Open the GitHub Classroom Assignment
+1. Open the course repository link above.
+2. Click **Use this template**.
+3. Choose **Create a new repository**.
+4. Set the owner to your own GitHub account.
+5. Choose a clear repository name, such as `ban6003-week1-2-yourname`.
+6. Choose **Public** unless you have a specific reason to keep it private.
+7. Click **Create repository**.
 
-Your instructor will post a GitHub Classroom assignment link in Canvas.
+After GitHub creates your repository, copy the URL. This is the repository you will work in and submit through Canvas.
 
-Open this Canvas page and click the GitHub Classroom invitation link near the top. You may be asked to sign in to GitHub again.
+## Step 3A: Recommended for Beginners - Use GitHub Codespaces
 
-The first time you use GitHub Classroom for this course, you may be asked to connect your GitHub account to the course roster. Select your own name or identifier carefully. If you are unsure which roster entry is yours, stop and ask your instructor before continuing.
+Codespaces runs VS Code and Jupyter in your browser. You do not need to install Python locally.
 
-## Step 3: Accept the Assignment
+1. Open your own GitHub repository.
+2. Click the green **Code** button.
+3. Click the **Codespaces** tab.
+4. Click **Create codespace on main**.
+5. Wait for setup to finish.
+6. Open the notebook in the `notebooks` folder.
+7. If Jupyter asks for a kernel, choose the available Python kernel.
 
-After opening the assignment link, click the button to accept the assignment. If GitHub asks you to authorize GitHub Classroom, approve it.
+Important Codespaces quota note: personal GitHub Free accounts include 120 core hours per month. On a 2-core Codespace, that is about 60 hours of runtime. If you verify student status through GitHub Education, GitHub currently advertises 180 Codespaces hours per month. Codespaces quota can run out. Closing the browser tab does not necessarily stop the Codespace.
 
-GitHub Classroom will create a personal copy of the assignment repository for you. This may take a moment. When it is ready, you should see a link to your repository.
+When you are done working:
 
-Open your repository. The repository belongs to you for this assignment, but your instructor can view your submitted work.
+1. Go to `https://github.com/codespaces`.
+2. Find your Codespace.
+3. Click the three dots.
+4. Choose **Stop codespace**.
 
-Important: the repository link should include your GitHub username or course identifier. If the page only shows the template repository, go back to the invitation link and make sure you accepted the assignment.
+Stopping Codespaces saves compute usage. Delete old Codespaces if you no longer need them.
 
-## Step 4: If GitHub Says You Do Not Have Access
+## Step 3B: Option for Local Work - Install Python, Conda, VS Code, and Jupyter
 
-Sometimes GitHub Classroom creates the repository but GitHub still needs you to accept a repository or organization invitation before you can open it.
+Use this path if you prefer running everything on your own computer.
 
-If you see a repository access message or cannot open the assignment repository:
+### Windows Setup
 
-1. Make sure you are signed in to the same GitHub account you used to accept the assignment.
-2. Check the notifications inbox in the upper-right corner of GitHub.
-3. You can also go directly to `https://github.com/notifications`.
-4. Look for an invitation from GitHub Classroom, the course organization, or `github-classroom[bot]`.
-5. Accept the pending invitation.
-6. Return to the assignment repository link and refresh the page.
+1. Install Miniconda or Anaconda for Windows.
+2. Install VS Code.
+3. Install Git for Windows.
+4. Open **Anaconda Prompt** from the Start menu.
+5. Create the course environment:
 
-You may also receive an email from GitHub with a link to accept the same invitation.
+```bash
+conda create -n ban6003 python=3.12
+conda activate ban6003
+python -m pip install --upgrade pip
+```
 
-## Step 5: Start GitHub Codespaces
+### Mac Setup
 
-Inside your assignment repository:
+1. Install Miniconda or Anaconda for macOS.
+2. Install VS Code.
+3. Install Git if it is not already available.
+4. Open **Terminal**.
+5. Create the course environment:
 
-1. Click the green **Code** button.
-2. Click the **Codespaces** tab.
-3. Click **Create codespace on main**.
-4. Wait for the Codespace to finish loading.
+```bash
+conda create -n ban6003 python=3.12
+conda activate ban6003
+python -m pip install --upgrade pip
+```
 
-The first launch can take several minutes because the environment is being built. Wait until setup finishes before running the notebook.
+### Clone and Run Locally
 
-## Step 6: Open the Notebook
+In Terminal or Anaconda Prompt, run:
 
-In the file explorer, open:
+```bash
+git clone YOUR_REPOSITORY_URL
+cd YOUR_REPOSITORY_FOLDER
+conda activate ban6003
+python -m pip install -r requirements.txt
+jupyter lab
+```
 
-`notebooks/Week1_introduction_to_codespaces.ipynb`
+Replace `YOUR_REPOSITORY_URL` with the URL of your own GitHub repository. JupyterLab will open in your browser. Open the notebook from the `notebooks` folder and run it from top to bottom.
 
-If Jupyter asks you to select a kernel, choose:
+## Step 4: Save, Commit, and Push
 
-`base`
+If you are using GitHub and a repository, save your notebook and push your changes.
 
-If `base` is not visible immediately, wait a little longer for Codespaces setup to finish, then try again.
-
-## Step 7: Run and Complete the Notebook
-
-Run each cell from top to bottom. The notebook checks that Python works, Pandas imports correctly, and the Jupyter environment is ready.
-
-Complete any short written response requested in the notebook. Save the notebook when you finish.
-
-## Step 8: Commit and Push Your Work
-
-In Codespaces, open the Source Control panel or use the terminal. A typical terminal workflow is:
+In terminal:
 
 ```bash
 git status
 git add .
-git commit -m "Complete Module 1 readiness check"
+git commit -m "Complete Module 1 setup check"
 git push
 ```
 
-After pushing, refresh your GitHub repository page in the browser. You should see your latest commit.
+If you are working from a downloaded ZIP instead of GitHub, save your completed notebook and submit the required file or ZIP through Canvas.
 
-## What Good Completion Looks Like
+## Step 5: Submit Through Canvas
 
-Your notebook should show that Python and Pandas ran successfully. Your repository should contain a saved version of the notebook, and GitHub should show your latest commit.
+Submit one of the following through Canvas:
 
-## If Something Goes Wrong
+1. Your GitHub repository link, if the instructor can access it.
+2. A ZIP file containing your completed notebook and required files.
 
-If the assignment link does not work, make sure you are signed in to the correct GitHub account. If you selected the wrong roster identifier, contact your instructor. If Codespaces is slow, wait a few minutes and refresh. If the notebook kernel is missing, wait for setup to finish and choose `base`.
+If your repository is private, invite `zzz1990771` as a collaborator before submitting the link.
 
 ## Minimum Completion Checklist
 
 Before submitting, make sure:
 
-- You signed in to GitHub.
-- You accepted the GitHub Classroom assignment.
-- You opened your personal assignment repository.
-- You started a Codespace.
+- You created your own copy of the course repository.
+- Your repository is public, or you invited the instructor if it is private.
 - You opened the Week 1 notebook.
-- You selected the `base` kernel.
 - You ran the Python and Pandas checks.
 - You completed the short written response.
-- You saved, committed, and pushed your work.
+- You saved your work.
+- You submitted your GitHub link or completed files through Canvas.

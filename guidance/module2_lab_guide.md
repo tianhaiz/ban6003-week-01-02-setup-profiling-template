@@ -19,23 +19,14 @@ Complete both notebooks:
 
 The guided lab teaches the core commands. The assignment notebook asks you to apply those commands more independently.
 
-## Starting from GitHub Classroom
 
-If Module 2 is part of the same Module 1-2 assignment repository, open the repository you already created in Module 1. If your instructor provides a separate GitHub Classroom link, accept that assignment link first, then open the new repository.
+## GitHub Repository and Running Environment
 
-**GitHub Classroom invitation link:** [to be added]
+This module is part of the Module 1-2 package. Use the same repository you created from this public template repository:
 
-If GitHub says you do not have access to the repository, check that you are signed in to the same GitHub account you used for Module 1. Then check the GitHub notifications inbox in the upper-right corner, or go to `https://github.com/notifications`, and accept any pending repository or organization invitation from GitHub Classroom.
+https://github.com/tianhaiz/ban6003-week-01-02-setup-profiling-template
 
-To reopen Codespaces:
-
-1. Go to your assignment repository on GitHub.
-2. Click **Code**.
-3. Click **Codespaces**.
-4. Open the existing Codespace if one is listed, or create a new Codespace on `main`.
-5. Wait for the environment to finish loading.
-
-If Jupyter asks for a kernel, choose `base`.
+Continue working in your own repository, not the instructor template. You may use Codespaces or your local conda/Jupyter environment. Make sure your repository is public, or invite `zzz1990771` / `zzz1990771@gmail.com` if it is private. Submit your GitHub repository link or completed files through Canvas.
 
 ## What You Will Practice
 
@@ -43,7 +34,7 @@ You will practice basic Python objects, code and markdown cells, importing Panda
 
 ## Recommended Workflow
 
-1. Open the assignment repository in GitHub Codespaces.
+1. Open your repository in Codespaces or local Jupyter.
 2. Open `notebooks/Week2_lab1_python_pandas_guided_lab.ipynb`.
 3. Run the guided lab from top to bottom.
 4. Read the markdown explanations, not just the code.
@@ -72,7 +63,7 @@ Before submitting, make sure:
 - You created numerical and categorical summaries.
 - You checked possible duplicates.
 - You wrote short observations about data quality.
-- You saved, committed, and pushed your work.
+- You saved your work and submitted through Canvas.
 
 Suggested commit message:
 
